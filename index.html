@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="result">
+                <div class="res" id="res">
+                    <span id="numberResult"></span>
+                </div>
+            </div>
+            <div class="numbersOperations">
+                <!-- Primeira coluna -->
+                <div class="firstCol">
+                    <div><button onclick="insertNumber('*')">X</button></div>
+                    <div><button onclick="insertNumber('/')">/</button></div>
+                    <div><button onclick="clearr()">C</button></div>
+                    <div><button onclick="backNumber()">⪡</button></div>
+                </div>
+                <!-- Segunda coluna -->
+                <div class="firstCol">
+                    <div><button onclick="insertNumber('1')">1</button></div>
+                    <div><button onclick="insertNumber('2')">2</button></div>
+                    <div><button onclick="insertNumber('3')">3</button></div>
+                    <div><button onclick="insertNumber('+')">+</button></div>
+                </div>
+                <!-- Terceira coluna -->
+                <div class="firstCol">
+                    <div><button onclick="insertNumber('4')">4</button></div>
+                    <div><button onclick="insertNumber('5')">5</button></div>
+                    <div><button onclick="insertNumber('6')">6</button></div>
+                    <div><button onclick="insertNumber('-')">-</button></div>
+                </div>
+                <!-- Quarta coluna -->
+                <div class="firstCol">
+                    <div><button onclick="insertNumber('7')">7</button></div>
+                    <div><button onclick="insertNumber('8')">8</button></div>
+                    <div><button onclick="insertNumber('9')">9</button></div>
+                    <div><button onclick="insertNumber('%')">%</button></div>
+                </div>
+                <!-- Quinta coluna -->
+                <div class="firstCol">
+                    <div><button onclick="insertNumber(',')">,</button></div>
+                    <div><button onclick="insertNumber('0')">0</button></div>
+                    <div><button onclick="insertNumber('.')">.</button></div>
+                    <div><button class="equal" onclick="calculator()">=</button></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
